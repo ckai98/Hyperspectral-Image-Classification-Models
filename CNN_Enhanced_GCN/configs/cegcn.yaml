@@ -1,0 +1,19 @@
+experiment_name: "CEGCN_Indian_Pines"
+
+dataset:
+  data_path: "HSI_data/Indian_pines_corrected.mat"
+  gt_path: "HSI_data/Indian_pines_gt.mat"
+  patch_size: 9
+  n_components: 30 # PCA
+  n_superpixels: 1000
+
+model:
+  hidden_dim: 128
+  
+training:
+  epochs: 200
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  seed: 42
+  samples_per_class: 30 # Number of samples per class for training (Paper uses e.g. 50 or 30)
