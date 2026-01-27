@@ -8,8 +8,8 @@ import logging
 import utils_logger
 from tqdm import tqdm
 import seaborn as sns
-from Model_S3ANet import *
-from MambaMoE import *
+from Models.Model_S3ANet import *
+from Models.MambaMoE import *
 
 from Tools.utils import metrics, show_results
 from Tools.dataset import load_mat_hsi
